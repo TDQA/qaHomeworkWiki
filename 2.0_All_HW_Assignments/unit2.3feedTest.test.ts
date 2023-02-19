@@ -25,7 +25,8 @@ const hippoFood = ["grass", "reeds", "shoots"];
 const badFood = ["shrimp", "potatoes", "pizza", "icecream"];
 
 // badFood can be put in or outside of the test function
-
+// describe groups tests together
+// you can use test or it to create a test
 describe("feeding animals", () => {
   test("Alex likes the food we expect", () => {
     lionFood.forEach((food) => {
