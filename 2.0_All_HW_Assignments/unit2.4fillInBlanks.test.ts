@@ -46,7 +46,7 @@ describe("Employee Manager 1.2", () => {
         */
         await driver.findElement(bernice).click();
         await driver.wait(
-            until.elementIsVisible(await driver.findElement(nameInput))
+            until.elementIsVisible(await driver.findElement(nameDisplay))
         );
         await driver.findElement(nameInput).clear();
         await driver.findElement(nameInput).sendKeys("Test Name");
@@ -81,7 +81,7 @@ describe("Employee Manager 1.2", () => {
             */
             await driver.findElement(phillip).click();
             await driver.wait(
-                until.elementIsVisible(await driver.findElement(nameInput))
+                until.elementIsVisible(await driver.findElement(nameDisplay))
             );
             await driver.findElement(nameInput).clear();
             await driver.findElement(nameInput).sendKeys("Test Name");
@@ -103,7 +103,7 @@ describe("Employee Manager 1.2", () => {
             */
             await driver.findElement(bernice).click();
             await driver.wait(
-                until.elementIsVisible(await driver.findElement(nameInput))
+                until.elementIsVisible(await driver.findElement(nameDisplay))
             );
             await driver.findElement(nameInput).clear();
             await driver.findElement(nameInput).sendKeys("Test Name");
@@ -155,7 +155,7 @@ describe("Employee Manager 1.2", () => {
             */
             await driver.findElement(bernice).click();
             await driver.wait(
-                until.elementIsVisible(await driver.findElement(nameInput))
+                until.elementIsVisible(await driver.findElement(nameDisplay))
             );
             await driver.findElement(nameInput).clear();
             await driver.findElement(nameInput).sendKeys(Key.SPACE, Key.BACK_SPACE);
