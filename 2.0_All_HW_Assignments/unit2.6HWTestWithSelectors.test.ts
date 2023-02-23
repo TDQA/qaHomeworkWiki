@@ -18,7 +18,7 @@ describe("Filling in the blanks", () => {
     const nameInput: By = By.name("namInput") //fill in the blank
     const clrBtn: By = By.id("clearBtn") //fill in blank 
     const submitBtn: By = By.id("saveBtn") //fill in blank
-    const errorMsg: By = By.xpath('//p[text() = "Errors Received:"]') // fill in blank 
+    const errorMsg: By = By.xpath('//p[@id = "validHeader"]') // fill in blank 
 
     test("filling in the blanks for real", async () => {
         await driver.findElement(hdrInput).sendKeys("Arrest")
