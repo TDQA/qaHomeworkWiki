@@ -14,7 +14,7 @@ export class SpecPage {
         await this.driver.wait(until.elementLocated(this.searchBar))
     }
     async sendKeys(elementBy: By, keys) {
-        await this.driver.wait(until.elementLocated(elementBy))
+        await this.driver.wait(until.elementLocated(this.searchBar))
         return await this.driver.findElement(elementBy).sendKeys(keys)
     }
     async getText(elementBy) {
